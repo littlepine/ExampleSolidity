@@ -15,7 +15,7 @@ contract basicERC20 is ERC20Detailed, Adminstrator {
      */
     constructor () ERC20Detailed("Class 27 May 2023", "Class27May", 5) {
         uint256 totalSupply = 32*(10 ** 5); //3.2 millions coins     
-        _mint( msg.sender, totalSupply.mul(10 ** uint256(decimals())) );
+        _mint( msg.sender, totalSupply);
     }
     ///fallback function
     fallback () external payable  { 
