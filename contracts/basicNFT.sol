@@ -5,6 +5,7 @@ pragma solidity >=0.8.0;
 import "./ERC721.sol";
 import "./Administrator.sol";
 import "./IERC20.sol";
+import "./SafeMath.sol";
 
 contract basicNFT is ERC721, Adminstrator {
 	uint256 private _totalSupply;
